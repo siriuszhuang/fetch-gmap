@@ -5,8 +5,8 @@ class DataModel:
 	__dbHost = '127.0.0.1'
 	__dbPort = 3306
 	__dbUser = 'root'
-	__dbPassword = 'zsrzsr1989'
-	__dbDatabase = 'gmap_data'
+	__dbPassword = 'password'
+	__dbDatabase = 'gmap'
 	__dbTable = 'gmap_data'
 	__dbConfTable = 'gmap_config'
 	__dbLink = False
@@ -158,7 +158,7 @@ VALUES
 		address in the database.'''
 
 		query = 'SELECT `id` FROM `%s` WHERE `address` = "%s"'%(
-			self.__dbDatabase,
+			self.__dbTable,
 			dataList['address']
 		)
 		query = query.encode('utf8')

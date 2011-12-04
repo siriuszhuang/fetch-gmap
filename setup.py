@@ -1,5 +1,4 @@
 #!/usr/bin/python2.7
-
 import string
 from lib.url_maker import UrlMaker
 from lib.requester import Requester
